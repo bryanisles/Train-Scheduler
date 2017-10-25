@@ -50,6 +50,7 @@ var arrivalConvertedTime = moment(mySS.nextArrival, "HH:mm").format("X");
 var currentConvertedTime = moment().format("X");
 var differenceTime = (currentConvertedTime - arrivalConvertedTime) / 60;
 var minutesAway = (mySS.frequency - differenceTime % mySS.frequency).toFixed(2);
+
 var myRow = $("<tr>");
 var myData = $("<td>");
 
